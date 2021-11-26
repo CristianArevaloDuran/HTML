@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>El gran libro</title>
+</head>
+<body>
+
+    <!--Cabecera-->
+
+    <header class="encabezado">
+        <h1>El gran libro</h1>
+    </header>
+
+    <!--Cabecera-->
+
+    <!--Navegación-->
+
+    <nav class="navbar">
+        <a href="#">Inicio</a>
+        <a href="#">Ayuda</a>
+        <a href="#">Contacto</a>
+    </nav>
+
+    <!--Navegación-->
+
+    <!--Sección-->
+
+    <section class="seccion">
+
+        <!--Articulo 1-->
+
+        <article class="articulo">
+            <h2>Articulo 1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci consectetur delectus quibusdam asperiores odio! Voluptate, sapiente nobis laborum temporibus vel velit a rem. Odio architecto, totam at molestias ratione repellat.</p>
+            <img draggable="false" src="img/undraw_programming_re_kg9v.svg" alt="">
+        </article>       
+        
+        <!--Articulo 1-->
+
+        <!--Articulo 2-->
+
+        <article class="articulo">
+            <h2>Articulo 2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci consectetur delectus quibusdam asperiores odio! Voluptate, sapiente nobis laborum temporibus vel velit a rem. Odio architecto, totam at molestias ratione repellat.</p>
+            <img draggable="false" src="img/undraw_programming_re_kg9v.svg" alt="">
+        </article>       
+        
+        <!--Articulo 2-->
+
+        <!--Aside-->
+
+        <aside class="aside">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam veritatis nostrum architecto modi accusantium consequuntur atque facilis quo vel quae, nobis aperiam amet laboriosam deleniti. Assumenda dolores rem eaque ab!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In ab tempore odit a, eveniet adipisci magni et dolorum, perspiciatis accusamus repudiandae unde qui quaerat ipsum consequatur? Et quidem ipsa dolores.</p>
+        </aside>
+
+        <!--Aside-->
+
+    </section>
+
+    <!--Sección-->
+    
+    <!--Footer-->
+
+    <footer class="footer">
+        <p>Derechos reservados</p>
+    </footer>
+
+    <!--Footer-->
+
+    <script>
+        let body = document.querySelector('body');
+        let aside = document.querySelector('.aside');
+        let texto = document.querySelector('.aside p');
+
+        body.onload = ()=>{
+            aside.style.height = ((texto.scrollHeight * 2) + 50) + "px";
+        }
+    </script>
+</body>
+</html>
